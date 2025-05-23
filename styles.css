@@ -1,3 +1,93 @@
-.titulo{
-    color: pink;
+/* Definir o estilo básico da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradiente suave */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container principal */
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Cabeçalho */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffeb3b; /* Cor dourada */
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Seção de conteúdo */
+.content {
+    margin-top: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff4081; /* Cor rosa vibrante */
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e91e63;
+    transform: scale(1.1); /* Efeito de aumentar o botão */
+}
+
+button:active {
+    transform: scale(0.9); /* Efeito de apertar o botão */
+}
+
+/* Resposta dinâmica */
+.hidden {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #4caf50; /* Cor verde de sucesso */
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.hidden.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Estilo do rodapé */
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ddd;
 }
